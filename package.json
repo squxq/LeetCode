@@ -15,7 +15,9 @@
     "lint": "npx eslint --ignore-path .gitignore .",
     "lint:fix": "npx eslint --fix --ignore-path .gitignore .",
     "prettier": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache .",
-    "prettier:fix": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache ."
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache .",
+    "prepare": "husky install",
+    "commitlint": "commitlint --from=HEAD"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.4.0",
@@ -27,8 +29,12 @@
     "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0"
+  }
 }

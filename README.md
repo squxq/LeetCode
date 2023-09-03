@@ -47,11 +47,11 @@ My approach to solving LeetCode problems typically involves the following steps:
 
 ## List of Problems
 
-| #   | Title                                             | Solution        | Difficulty  |
-| --- | ------------------------------------------------- | --------------- | ----------- |
-| 88   | [Merge Sorted Array](problems/array/merge-sorted-array)                | TypeScript          | Easy        |
-| 27   | [Remove Element](problems/array/remove-element) | TypeScript          | Easy      |
-| ... | ...                                               | ...             | ...         |
+| #   | Title                                                   | Solution   | Difficulty |
+| --- | ------------------------------------------------------- | ---------- | ---------- |
+| 88  | [Merge Sorted Array](problems/array/merge-sorted-array) | TypeScript | Easy       |
+| 27  | [Remove Element](problems/array/remove-element)         | TypeScript | Easy       |
+| ... | ...                                                     | ...        | ...        |
 
 In this table:
 
