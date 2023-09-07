@@ -7,9 +7,9 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Debug TypeScript File",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/dist/index.js"
+      "program": "${workspaceFolder}/dist/${fileBasenameNoExtension}.js"
     }
   ]
 }
