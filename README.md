@@ -50,6 +50,7 @@ My approach to solving LeetCode problems typically involves the following steps:
 | #   | Title                                                                   | Topic      | Solution                                                                 | Difficulty |
 | --- | ----------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------ | ---------- |
 | 88  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Algorithms | [TypeScript](./problems/algorithms/mergeSortedArray/MergeSortedArray.ts) | Easy       |
+| 27  | [Remove Element](https://leetcode.com/problems/remove-element/)         | Algorithms | [TypeScript](./problems/algorithms/removeElement/RemoveElement.ts)       | Easy       |
 | ... | ...                                                                     | ...        | ...                                                                      | ...        |
 
 In this table:
