@@ -27,7 +27,7 @@ function git_commit(){
     TITLE=$1
     FILE1=$2
     FILE2=$3
-    git commit -m "New Problem Solution - \"${TITLE}\""  "${FILE1}" "${FILE2}"
+    git commit -m "problem: new problem solution - ${TITLE}"
 }
 
 if [ $# -lt 1 ] || [[ "${1}" != ${LEETCODE_NEW_URL}* ]] && [[ "${1}" != ${LEETCODE_OLD_URL}* ]]; then
@@ -60,12 +60,13 @@ README_FILE="${SCRIPT_PATH}/../README.md"
 
 echo "Step 2 : Created \"${SRC}\" source file!"
 
-echo "Step 3 : Run \"git add ${SRC}\"!"
-git add ${SRC_FILE}
-
 vi "${SRC_FILE}"
-echo "Step 4 : Edited the \"${SRC}\"!"
 echo "${file} ${SRC} ${SRC_FILE}"
+echo "Step 3 : Edited the \"${SRC}\"!"
+
+git add ${SRC_FILE}
+echo "Step 4 : Run \"git add ${SRC}\"!"
+
 readme=`${SCRIPT_PATH}/readme.sh ${SRC_FILE}`
 readme=`echo "${readme}" | tail -n 1`
 
@@ -76,16 +77,25 @@ else
     read -n 1 -s -r -p  "Please copy the line above & press any key continue to edit README.md"
 fi
 echo "Step 5 : Copied the readme text to Clipboard!"
-vi ${README_FILE}
 
+vi ${README_FILE}
 echo "Step 6 : Edited the \"README.md\"!"
+
+git add ${README_FILE}
+echo "Step 7 : Run \"git add ${README_FILE}\"!"
 
 QUESTION_FRONTEND_ID=`echo "${readme}" | awk -F '|' '{print $2}'`
 QUESTION_DIFFICULTY=`echo "${readme}" | awk -F '|' '{print $5}'`
 QUESTION_TITLE=`echo "${readme}" | awk -F '|' '{print $3}' | sed 's/\[/\]/' |awk -F ']' '{print $2}'`
 commit="git commit -m \"New Problem Solution - \\\"${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\\\"\""
 
-echo "Step 7 : It's ready to commit to git repository ..."
+yarn lint:fix
+yarn prettier:fix
+
+git add ${SRC_FILE}
+git add ${README_FILE}
+
+echo "Step 8 : It's ready to commit to git repository ..."
 echo ""
 echo "      ${commit} \\"
 echo "          ${SRC_FILE} \\"
@@ -96,6 +106,11 @@ git status
 
 commit="${commit} \"${WORKING_DIR}/${file}\" \"${SCRIPT_PATH}/../README.md\""
 
+echo ""
+echo "      Commit Message:"
+echo "      problem: new problem solution - ${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}"
+echo ""
+
 while true; do
     read -p "Do you wish to commit them (y/n) ? " yn
     case $yn in
@@ -104,5 +119,7 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
+
+echo "Step 9 : Commit to git repository!"
 
 echo "Done!"
