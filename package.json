@@ -16,6 +16,9 @@
   },
   "scripts": {
     "start": "./scripts/start.sh",
+    "workflow": "./scripts/workflow.sh",
+    "comments": "./scripts/comments.sh",
+    "readme": "./scripts/readme.sh",
     "build": "tsup ./problems --format cjs,esm --dts",
     "lint": "npx eslint --ignore-path .gitignore .",
     "lint:fix": "npx eslint --fix --ignore-path .gitignore .",
@@ -23,7 +26,8 @@
     "prettier:fix": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache .",
     "typecheck": "tsc",
     "prepare": "husky install",
-    "commitlint": "commitlint --from=HEAD"
+    "commitlint": "commitlint --from=HEAD",
+    "permissions": "chmod +x ./scripts/start.sh && chmod +x ./scripts/workflow.sh && chmod +x ./scripts/comments.sh && chmod +x ./scripts/readme.sh && chmod +x ./scripts/query_problem.sh"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.2",
