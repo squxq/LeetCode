@@ -1,12 +1,12 @@
-name: "LeetCode CI"
+name: "LeetCode CD"
 
 on:
   push:
     branches:
-      - "*"
+      - "master"
   pull_request:
     branches:
-      - "*"
+      - "master"
 
 defaults:
   run:
@@ -39,11 +39,5 @@ jobs:
       - name: Install npm Modules
         run: yarn install
 
-      - name: Lint
-        run: yarn lint
-
-      - name: Prettier
-        run: yarn prettier
-
-      - name: Type Check
-        run: yarn typecheck
+      - name: Build Frontend
+        run: yarn build
