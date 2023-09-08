@@ -55,6 +55,7 @@ My approach to solving LeetCode problems typically involves the following steps:
 | 80  | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArrayIi/RemoveDuplicatesFromSortedArrayIi.ts) | Medium     |
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/)                                             | Algorithms | [TypeScript](./problems/algorithms/majorityElement/MajorityElement.ts)                                     | Easy       |
 | 274 | [H-Index](https://leetcode.com/problems/h-index/)                                                               | Algorithms | [TypeScript](./problems/algorithms/hIndex/HIndex.ts)                                                       | Medium     |
+| 13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                             | Algorithms | [TypeScript](./problems/algorithms/romanToInteger/RomanToInteger.ts)                                       | Easy       |
 | ... | ...                                                                                                             | ...        | ...                                                                                                        | ...        |
 
 In this table:
