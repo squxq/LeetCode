@@ -89,6 +89,11 @@ QUESTION_DIFFICULTY=`echo "${readme}" | awk -F '|' '{print $5}'`
 QUESTION_TITLE=`echo "${readme}" | awk -F '|' '{print $3}' | sed 's/\[/\]/' |awk -F ']' '{print $2}'`
 commit="git commit -m \"New Problem Solution - \\\"${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\\\"\""
 
+echo ""
+echo "      Commit Message:"
+echo "      problem: new problem solution - ${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}"
+echo ""
+
 yarn lint:fix
 yarn prettier:fix
 
@@ -105,11 +110,6 @@ echo ""
 git status
 
 commit="${commit} \"${WORKING_DIR}/${file}\" \"${SCRIPT_PATH}/../README.md\""
-
-echo ""
-echo "      Commit Message:"
-echo "      problem: new problem solution - ${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}"
-echo ""
 
 while true; do
     read -p "Do you wish to commit them (y/n) ? " yn
