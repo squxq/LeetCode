@@ -47,16 +47,17 @@ My approach to solving LeetCode problems typically involves the following steps:
 
 ## List of Problems
 
-| #   | Title                                             | Solution        | Difficulty  |
-| --- | ------------------------------------------------- | --------------- | ----------- |
-| 88   | [Merge Sorted Array](problems/array/merge-sorted-array)                | TypeScript          | Easy        |
-| 27   | [Remove Element](problems/array/remove-element) | TypeScript          | Easy      |
-| ... | ...                                               | ...             | ...         |
+| #   | Title                                                                   | Topic      | Solution                                             | Difficulty |
+| --- | ----------------------------------------------------------------------- | ---------- | ---------------------------------------------------- | ---------- |
+| 88  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/) | Algorithms | [TypeScript](problems/algorithms/merge-sorted-array) | Easy       |
+| 27  | [Remove Element](https://leetcode.com/problems/remove-element/)         | Algorithms | [TypeScript](problems/algorithms/remove-element)     | Easy       |
+| ... | ...                                                                     | ...        | ...                                                  | ...        |
 
 In this table:
 
 - `#` represents the problem number.
 - `Title` contains a link to the problem's directory.
+- `Topic` categorizes the problems into the domain they represent (e.g. Algorithms, Database, Shell).
 - `Solution` indicates the programming language used for the solution.
 - `Difficulty` denotes the difficulty level of the problem (e.g., Easy, Medium, Hard).
 

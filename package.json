@@ -1,0 +1,52 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "LeetCode problems solutions. A journal of my problem-solving journey.",
+  "repository": "https://github.com/squxq/LeetCode.git",
+  "author": "squxq <franciscotomas0430@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": ">=16.0.0",
+    "yarn": ">=1.22.0",
+    "npm": "Please use Yarn as your package manager instead."
+  },
+  "scripts": {
+    "start": "./scripts/start.sh",
+    "workflow": "./scripts/workflow.sh",
+    "comments": "./scripts/comments.sh",
+    "readme": "./scripts/readme.sh",
+    "build": "tsup ./problems --format cjs,esm --dts",
+    "lint": "npx eslint --ignore-path .gitignore .",
+    "lint:fix": "npx eslint --fix --ignore-path .gitignore .",
+    "prettier": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache .",
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache .",
+    "typecheck": "tsc",
+    "prepare": "husky install",
+    "commitlint": "commitlint --from=HEAD",
+    "permissions": "chmod +x ./scripts/start.sh && chmod +x ./scripts/workflow.sh && chmod +x ./scripts/comments.sh && chmod +x ./scripts/readme.sh && chmod +x ./scripts/query_problem.sh"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.5.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0"
+  }
+}
