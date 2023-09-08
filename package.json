@@ -6,9 +6,9 @@
   "author": "squxq <franciscotomas0430@gmail.com>",
   "license": "MIT",
   "private": true,
-  "main": "dist/problems.js",
-  "module": "dist/problems.mjs",
-  "types": "dist/problems.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=18.0.0",
     "yarn": ">=1.22.0",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "start": "./scripts/start.sh",
-    "build": "tsup problems.ts --format cjs,esm --dts",
+    "build": "tsup ./problems --format cjs,esm --dts",
     "lint": "npx eslint --ignore-path .gitignore .",
     "lint:fix": "npx eslint --fix --ignore-path .gitignore .",
     "prettier": "prettier --check \"**/*.{ts,tsx,mdx}\" --cache .",
