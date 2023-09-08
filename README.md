@@ -56,6 +56,7 @@ My approach to solving LeetCode problems typically involves the following steps:
 | 169 | [Majority Element](https://leetcode.com/problems/majority-element/)                                             | Algorithms | [TypeScript](./problems/algorithms/majorityElement/MajorityElement.ts)                                     | Easy       |
 | 274 | [H-Index](https://leetcode.com/problems/h-index/)                                                               | Algorithms | [TypeScript](./problems/algorithms/hIndex/HIndex.ts)                                                       | Medium     |
 | 13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                             | Algorithms | [TypeScript](./problems/algorithms/romanToInteger/RomanToInteger.ts)                                       | Easy       |
+| 58  | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/)                                       | Algorithms | [TypeScript](./problems/algorithms/lengthOfLastWord/LengthOfLastWord.ts)                                   | Easy       |
 | ... | ...                                                                                                             | ...        | ...                                                                                                        | ...        |
 
 In this table:
