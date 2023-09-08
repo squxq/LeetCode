@@ -47,13 +47,14 @@ My approach to solving LeetCode problems typically involves the following steps:
 
 ## List of Problems
 
-| #   | Title                                                                                                     | Topic      | Solution                                                                                               | Difficulty |
-| --- | --------------------------------------------------------------------------------------------------------- | ---------- | ------------------------------------------------------------------------------------------------------ | ---------- |
-| 88  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                   | Algorithms | [TypeScript](./problems/algorithms/mergeSortedArray/MergeSortedArray.ts)                               | Easy       |
-| 27  | [Remove Element](https://leetcode.com/problems/remove-element/)                                           | Algorithms | [TypeScript](./problems/algorithms/removeElement/RemoveElement.ts)                                     | Easy       |
-| 26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.ts) | Easy       |
-| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArrayIi/RemoveDuplicatesFromSortedArrayIi.ts) | Medium |
-| ... | ...                                                                                                       | ...        | ...                                                                                                    | ...        |
+| #   | Title                                                                                                           | Topic      | Solution                                                                                                   | Difficulty |
+| --- | --------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
+| 88  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                         | Algorithms | [TypeScript](./problems/algorithms/mergeSortedArray/MergeSortedArray.ts)                                   | Easy       |
+| 27  | [Remove Element](https://leetcode.com/problems/remove-element/)                                                 | Algorithms | [TypeScript](./problems/algorithms/removeElement/RemoveElement.ts)                                         | Easy       |
+| 26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)       | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.ts)     | Easy       |
+| 80  | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArrayIi/RemoveDuplicatesFromSortedArrayIi.ts) | Medium     |
+| 169 | [Majority Element](https://leetcode.com/problems/majority-element/)                                             | Algorithms | [TypeScript](./problems/algorithms/majorityElement/MajorityElement.ts)                                     | Easy       |
+| ... | ...                                                                                                             | ...        | ...                                                                                                        | ...        |
 
 In this table:
 
