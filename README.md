@@ -52,6 +52,7 @@ My approach to solving LeetCode problems typically involves the following steps:
 | 88  | [Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array/)                                   | Algorithms | [TypeScript](./problems/algorithms/mergeSortedArray/MergeSortedArray.ts)                               | Easy       |
 | 27  | [Remove Element](https://leetcode.com/problems/remove-element/)                                           | Algorithms | [TypeScript](./problems/algorithms/removeElement/RemoveElement.ts)                                     | Easy       |
 | 26  | [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArray/RemoveDuplicatesFromSortedArray.ts) | Easy       |
+| 80 | [Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/) | Algorithms | [TypeScript](./problems/algorithms/removeDuplicatesFromSortedArrayIi/RemoveDuplicatesFromSortedArrayIi.ts) | Medium |
 | ... | ...                                                                                                       | ...        | ...                                                                                                    | ...        |
 
 In this table:
