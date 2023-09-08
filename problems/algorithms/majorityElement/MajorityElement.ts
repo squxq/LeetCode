@@ -44,7 +44,7 @@ export function majorityElement(nums: number[]): number {
   // return majority
 
   // second submit - Boyer–Moore majority vote algorithm
-  let majority: number;
+  let majority!: number;
   let counter: number = 0;
   for (const num of nums) {
     if (counter === 0) {

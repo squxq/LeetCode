@@ -34,10 +34,10 @@
 
 export function hIndex(citations: number[]): number {
   const orderedCitations = citations.sort((a, b) => b - a);
-  let f = 0;
-  let h = 0;
+  let f: number = 0;
+  let h: number = 0;
   while (f < citations.length) {
-    if (f < orderedCitations[f]) {
+    if (f < (orderedCitations[f] as number)) {
       h = f + 1;
     }
     f++;
