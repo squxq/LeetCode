@@ -58,6 +58,7 @@ My approach to solving LeetCode problems typically involves the following steps:
 | 13  | [Roman to Integer](https://leetcode.com/problems/roman-to-integer/)                                             | Algorithms | [TypeScript](./problems/algorithms/romanToInteger/RomanToInteger.ts)                                       | Easy       |
 | 58  | [Length of Last Word](https://leetcode.com/problems/length-of-last-word/)                                       | Algorithms | [TypeScript](./problems/algorithms/lengthOfLastWord/LengthOfLastWord.ts)                                   | Easy       |
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/)                                                     | Algorithms | [TypeScript](./problems/algorithms/rotateArray/RotateArray.ts)                                             | Medium     |
+| 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)               | Algorithms | [TypeScript](./problems/algorithms/bestTimeToBuyAndSellStock/BestTimeToBuyAndSellStock.ts)                 | Easy       |
 | ... | ...                                                                                                             | ...        | ...                                                                                                        | ...        |
 
 In this table:
