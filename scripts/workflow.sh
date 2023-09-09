@@ -31,23 +31,23 @@ function fix_errors()
     while true; do
         set +e
 
-        yarn lint:fix "$file" > /dev/null
-        lint_exit_code=$?
-
-        yarn prettier:fix "$file" > /dev/null
+        yarn prettier:fix "$file"
         prettier_exit_code=$?
 
         if [ "$is_readme" != true ]; then
-            yarn typecheck > /dev/null
+            yarn lint:fix "$file"
+            lint_exit_code=$?
+
+            yarn typecheck
             typecheck_exit_code=$?
 
-            yarn build "$file" > /dev/null
+            yarn build "$file"
             build_exit_code=$?
         fi
 
         set -e
 
-        if [ "$lint_exit_code" -eq 0 ] && [ "$prettier_exit_code" -eq 0 ] && ([ "$is_readme" = true ] || [ "$typecheck_exit_code" -eq 0 ] && [ "$build_exit_code" -eq 0 ]); then
+        if [ "$prettier_exit_code" -eq 0 ] && ([ "$is_readme" = true ] || [ "$lint_exit_code" -eq 0 ] && [ "$typecheck_exit_code" -eq 0 ] && [ "$build_exit_code" -eq 0 ]); then
             echo "No errors or warnings in \"$file\". Continuing..."
             break
         else
