@@ -46,6 +46,4 @@ describe("gcdOfStrings", () => {
   it("should handle uppercase letters", () => {
     expect(gcdOfStrings("ABCDEF", "DEF")).toBe("DEF");
   });
-
-  // Add more test cases as needed, covering edge cases and different scenarios.
 });
