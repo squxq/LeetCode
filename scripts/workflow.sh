@@ -135,6 +135,24 @@ git add ${TEST_FILE}
 
 echo "Step 9 : Run \"git add ${TEST}\"!"
 
+while true; do
+        set +e
+
+        yarn test ${TEST_FILE}
+        test_exit_code=$?
+
+        set -e
+
+        if [ "$test_exit_code" -eq 0 ]; then
+            echo "No errors or warnings in \"$TEST\". Continuing..."
+            break
+        else
+            read -n 1 -s -r -p "There are errors in \"$TEST\". Review and fix the code/tests, then press any key to continue."
+        fi
+    done
+
+echo "Step 10 : Run \"yarn test ${TEST}\"!"
+
 readme=`${SCRIPT_PATH}/readme.sh ${SRC_FILE}`
 readme=`echo "${readme}" | tail -n 1`
 
@@ -145,19 +163,23 @@ else
     read -n 1 -s -r -p  "Please copy the line above & press any key continue to edit README.md."
 fi
 
-echo "Step 10 : Copied the readme text to Clipboard!"
+echo "Step 11 : Copied the readme text to Clipboard!"
 
 vi ${README_FILE}
 
-echo "Step 11 : Edited the \"README.md\"!"
+echo "Step 12 : Edited the \"README.md\"!"
 
 fix_errors $README_FILE true
 
-echo "Step 12 : Fix errors and warnings from \"${README_FILE}\"!"
+echo "Step 13 : Fix errors and warnings from \"${README_FILE}\"!"
 
 git add ${README_FILE}
 
-echo "Step 13 : Run \"git add ${README_FILE}\"!"
+echo "Step 14 : Run \"git add ${README_FILE}\"!"
+
+git add .
+
+echo "Step 15 : Run \"git add .\"!"
 
 QUESTION_FRONTEND_ID=`echo "${readme}" | awk -F '|' '{print $2}'`
 QUESTION_DIFFICULTY=`echo "${readme}" | awk -F '|' '{print $5}'`
@@ -169,7 +191,7 @@ echo "      Commit Message:"
 echo "      git commit -m \"problem: new problem solution - ${QUESTION_FRONTEND_ID}. ${QUESTION_TITLE}\""
 echo ""
 
-echo "Step 14 : It's ready to commit to git repository ..."
+echo "Step 16 : It's ready to commit to git repository ..."
 echo ""
 echo "      ${commit} \\"
 echo "          ${SRC_FILE} \\"
@@ -189,6 +211,6 @@ while true; do
     esac
 done
 
-echo "Step 15 : Commit to git repository!"
+echo "Step 17 : Commit to git repository!"
 
 echo "Done!"
