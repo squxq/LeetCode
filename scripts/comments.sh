@@ -134,7 +134,7 @@ fi
 
 
 echo "--------------"
-echo "$QUESTION_CONTENT"
+echo $QUESTION_CONTENT
 echo $QUESTION_DIFFICULTY
 echo $QUESTION_TITLE
 echo $QUESTION_ID

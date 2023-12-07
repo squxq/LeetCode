@@ -41,7 +41,7 @@ function query_problem_xidel()
 
     QUESTION_FRONTEND_ID=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.questionFrontendId')
 
-    #QUESTION_CATEGORY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.categoryTitle')
+    QUESTION_CATEGORY=$(xidel ${OPT} ${TMP_JSON_FILE} -e '$json("data").question.categoryTitle')
 }
 
 function query_problem_jq()
