@@ -124,7 +124,9 @@ My approach to solving LeetCode problems typically involves the following steps:
 | 1903 | [Largest Odd Number in String](https://leetcode.com/problems/largest-odd-number-in-string/)                                                       | Algorithms | [TypeScript](./problems/algorithms/largestOddNumberInString/LargestOddNumberInString.ts)                                                 | Easy       |
 | 606  | [Construct String from Binary Tree](https://leetcode.com/problems/construct-string-from-binary-tree/)                                             | Algorithms | [TypeScript](./problems/algorithms/constructStringFromBinaryTree/ConstructStringFromBinaryTree.ts)                                       | Easy       |
 | 867  | [Transpose Matrix](https://leetcode.com/problems/transpose-matrix/)                                                                               | Algorithms | [TypeScript](./problems/algorithms/transposeMatrix/TransposeMatrix.ts)                                                                   | Easy       |
-| ...  | ...                                                                                                                                               | ...        | ...                                                                                                                                      | ...        |
+| 1287 | [Element Appearing More Than 25% In Sorted Array](https://leetcode.com/problems/element-appearing-more-than-25-in-sorted-array/)                  | Algorithms | [TypeScript](./problems/algorithms/elementAppearingMoreThan25InSortedArray/ElementAppearingMoreThan25InSortedArray.ts)                   | Easy       |
+
+| ... | ... | ... | ... | ... |
 
 In this table:
 
