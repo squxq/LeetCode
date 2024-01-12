@@ -10,4 +10,16 @@ describe("determine if string halves are alike", () => {
 
     expect(result).toBe(true);
   });
+
+  test("example 2", () => {
+    const result: boolean = halvesAreAlike("textbook");
+
+    expect(result).toBe(false);
+  });
+
+  test("failed submission - 58 / 113 testcases passed", () => {
+    const result: boolean = halvesAreAlike("AbCdEfGh");
+
+    expect(result).toBe(true);
+  });
 });
